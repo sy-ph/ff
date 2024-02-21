@@ -1,0 +1,21 @@
+/* REMOVE CUM FROM URLBAR */
+
+#identity-box.extensionPage #identity-icon-label {
+	display: none !important;
+}
+#identity-icon-box {
+    background: none !important;
+}
+#identity-box.extensionPage
+    #identity-icon[tooltiptext="Loaded by extension: Tabliss"],
+#urlbar[pageproxystate="invalid"]
+    #identity-box
+    #identity-icon,
+#tracking-protection-icon-container[hidden]
+    ~ #identity-box[pageproxystate="valid"].notSecure:not(.chromeUI, .localResource)
+    #identity-icon {
+	fill-opacity: var(--urlbar-icon-fill-opacity) !important;
+	list-style-image: url(chrome://global/skin/icons/search-glass.svg) !important;
+}
+/* END CUSTOM STYLING */
+/* white  l i v e s  matter */
